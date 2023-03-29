@@ -2,6 +2,7 @@ import abi from "./contract/coffee.json";
 import { useState, useEffect } from "react";
 import { ethers } from "ethers";
 import Buy from "./components/Buy";
+import Memos from "./components/Memos";
 import coffee from "./coffee.png";
 import "./App.css";
 
@@ -62,6 +63,7 @@ function App() {
       </p>
       <div className="container">
         <Buy state={state} />
+        <Memos state={state} />
       </div>
     </div>
   );
